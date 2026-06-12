@@ -1,5 +1,6 @@
 # Health-Track-Nigeria
 This end-to-end healthcare analytics project focused on auditing, cleaning, and analyzing 30,000 hospital records across 10 teaching hospitals in Nigeria. I investigated patient outcomes, readmission rates, mortality trends, operational efficiency, revenue performance, billing accuracy, and patient demographics.
+
 Health Track Nigeria – Healthcare Operations, Clinical & Financial Analytics
 Project Overview
 Health Track Nigeria is a hospital management company overseeing 10 major teaching hospitals across Nigeria. The organization is facing mounting pressure from the Ministry of Health over rising patient readmission rates, unresolved billing discrepancies, and inconsistent clinical outcomes across departments and hospitals. The data team has been tasked with performing a full data audit, cleaning the records in SQL, and building a Power BI dashboard to give hospital administrators and clinical directors a clear view of operational performance, financial health and patient outcomes.
