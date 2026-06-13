@@ -57,7 +57,7 @@ WITH duplicates AS (
         ) AS row_num
     FROM Patient_1
 ),
--- Tag only the duplicate rows (row_num > 1)
+-- selecting only the duplicate rows 
 to_update AS (
     SELECT 
         patient_id,
@@ -218,7 +218,7 @@ SELECT
     SUM(CASE WHEN registration_date IS NOT NULL THEN 1 ELSE 0 END) AS recovered
 FROM Patient_1
 
--- We can Flag the rest as Unknown
+-- i can Flag the rest as Unknown
 SELECT *
 FROM Patient_1
 WHERE registration_date IS NULL;
