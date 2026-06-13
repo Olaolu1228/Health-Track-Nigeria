@@ -54,7 +54,7 @@ SELECT TOP 1
 FROM Records_1
 ORDER BY CAST(SUBSTRING(record_id, 4, LEN(record_id)) AS INT) DESC;
 
--- Reassign new record_ids to duplicate rows keeping original for first occurrence
+-- i can now reassign the new record_ids to duplicate rows and keep original 
 WITH CTE AS (
     SELECT 
         record_id,
@@ -82,7 +82,7 @@ INNER JOIN CTE c
     AND m.patient_id = c.patient_id
 WHERE c.row_num > 1;
 
--- Starting new IDs from 90000 ensures they never clash with existing IDs which run from
+-- i am starting new IDs from 90000 which will ensure that they don't clash with existing IDs which run from
 -- REC000001 to REC015000
 
 -- Confirm no more duplicate record_ids
